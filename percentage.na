@@ -1,0 +1,42 @@
+"max:achieved:"
+inc 12     
+          
+          
+# print max 
+lit 0
+lit 4
+lit 5
+out 2
+
+# read input from stdin
+la 0 62
+la 0 66
+in 0
+sto
+
+#print achieved
+lit 4
+lit 13
+lit 14
+out 2
+
+#read input from stdin
+la 0 70
+la 0 74
+in 0
+sto
+
+la 0 78
+lv 0 70
+lit 100
+mul
+lv 0 62
+div
+sto
+out 3
+
+lv 0 78
+lit 3
+out 0
+out 3
+halt

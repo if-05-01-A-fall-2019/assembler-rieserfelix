@@ -1,0 +1,40 @@
+"enter int:"
+inc 12
+
+# print enter int
+lit 0
+lit 10
+lit 11
+out 2
+
+# input
+la 0 32
+la 0 36
+in 0
+
+# +1 to the input
+la 0 32
+lv 0 32
+lit 1
+add
+sto
+
+# beginning 
+.loop
+lv 0 36
+lit 5
+out 0
+
+# +1
+la 0 36
+lv 0 36
+lit 1
+add
+sto
+
+# end 
+lv 0 36
+lv 0 32
+rel 2
+fjmp .loop
+halt
